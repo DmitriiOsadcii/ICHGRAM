@@ -1,0 +1,69 @@
+.result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 22px;
+}
+
+.result:hover {
+    background-color: var(--hover-form-background-color);
+}
+
+.result_inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.result_info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+    gap: 6px;
+}
+
+.result_fullName {
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 4px;
+    line-height: 129%;
+    color: var(--grey-text-color);
+}
+
+.result_avatarBox {
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    padding: 2px;
+    background: conic-gradient(#b93aaa, #e95950, #e99250, #eecd4a, #e99657, #e95950, #b83170, #aa3ab9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result_avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 2px;
+    object-fit: cover;
+    background-color: var(--form-background-color);
+}
+
+.result_usernameBtn {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    background: none;
+    border: 0;
+    text-align: start;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 4px;
+    text-decoration: none;
+    color: var(--main-text-color);
+    margin-left: -6px;
+}

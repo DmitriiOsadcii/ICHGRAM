@@ -1,0 +1,40 @@
+.articleWrap {
+    width: 100%;
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.contentBox {
+    max-width: 800px;
+    margin: 40px auto;
+    color: var(--grey-text-color);
+}
+
+.headline {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--main-text-color);
+    margin-bottom: 32px;
+}
+
+.publishedOn {
+    font-style: italic;
+    margin-bottom: 32px;
+}
+
+.contentSection {
+    margin-bottom: 32px;
+}
+
+.contentSection h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--main-text-color);
+}
+
+.contentSection p {
+    line-height: 1.6;
+}

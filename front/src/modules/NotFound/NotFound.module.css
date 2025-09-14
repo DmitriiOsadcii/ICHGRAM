@@ -1,0 +1,38 @@
+.notfoundWrapper {
+  display: flex;
+  gap: 44px;
+  margin-top: 94px;
+  margin-bottom: 185px;
+}
+
+.notfoundImageBox {
+  width: 301px;
+  height: 460px;
+}
+
+.notfoundImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.notfoundContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 44px;
+}
+
+.notfoundTitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 56%;
+  color: var(--main-text-color);
+}
+
+.notfoundText {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--grey-text-color);
+}

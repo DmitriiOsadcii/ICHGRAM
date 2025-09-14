@@ -1,0 +1,63 @@
+.appLayout {
+  min-height: 100vh;
+}
+
+.appHeader {
+  display: flex;
+}
+
+.appMain {
+  flex: 1;
+}
+
+/* фон для боковой панели */
+.overlayBackdrop {
+  position: fixed;
+  inset: 0;
+  top: 0;
+  left: 250px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 900;
+}
+
+/* боковая панель */
+.overlayPanel {
+  position: fixed;
+  left: 245px;
+  top: 0;
+  height: 100vh;
+  width: 397px;
+  max-width: 90vw;
+  box-shadow: 4px 0 24px 0 rgba(0, 0, 0, 0.15);
+  background: var(--white-background-color);
+  border-right: 1px solid var(--border-color);
+  border-radius: 0 16px 16px 0;
+
+  z-index: 901;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* overflow-y: auto; */
+}
+
+/* затемняющий слой поверх панели (для постов) */
+.appModalBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 950;
+}
+
+/* центрированная модалка */
+.appModalCenter {
+  position: fixed;
+  z-index: 960;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--white-background-color);
+  border-radius: 3px;
+  width: 935px;
+  max-height: 90vh;
+  overflow: hidden;
+}

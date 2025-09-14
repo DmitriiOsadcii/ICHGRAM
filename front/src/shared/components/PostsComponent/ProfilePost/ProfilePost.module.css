@@ -1,0 +1,42 @@
+
+/* Сетка постов */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 307px);
+  gap: 4px;
+}
+
+/* Карточка поста */
+.card {
+  position: relative;
+  width: 307px;
+  height: 307px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Картинка поста */
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+/* Оверлей при ховере (полупрозрачная тень) */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Ховер-эффекты */
+.card:hover .cardImage {
+  transform: scale(1.03);
+}
+.card:hover::after {
+  opacity: 1;
+}

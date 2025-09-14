@@ -1,0 +1,8 @@
+.profileWrapper {
+  padding: 38px 10px;
+  margin-bottom: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 55px;
+}

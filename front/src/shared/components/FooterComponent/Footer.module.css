@@ -1,0 +1,16 @@
+.link{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgb(248, 10, 10);
+    position: relative;
+    top: 10px;
+    font-size: large;
+    left: -60px;
+}
+.signup{
+    position: relative;
+    bottom: 10px;
+    left: 30px;
+}

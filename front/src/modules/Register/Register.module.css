@@ -1,0 +1,36 @@
+.register{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    align-items: center;
+    margin-top: 200px;
+}
+.successMessage {
+    border: 1px solid var(--focus-border-color);
+    border-radius: 1px;
+    width: 350px;
+    min-height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.success {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: green;
+    padding: 4px;
+    white-space: pre-line;
+}
+.footerWrap{
+  width: 100%;
+  display: flex;
+  justify-content: center; /* центрируем сам Footer */
+  margin-top: 18px;
+  position: relative;
+  left: 40px;
+}

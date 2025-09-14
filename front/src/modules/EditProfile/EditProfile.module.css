@@ -1,0 +1,83 @@
+.profile {
+    width: 610px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 33px;
+    padding: 48px 0;
+}
+
+.profile_title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 125%;
+    color: var(--main-text-color);
+    margin-bottom: 11px;
+}
+
+.profile_header {
+    width: 100%;
+    border-radius: 20px;
+    background: var(--second-background-color);
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile_user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile_meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 9px;
+}
+
+.profile_username {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--main-text-color);
+}
+
+.profile_fullName {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    color: var(--grey-text-color);
+}
+
+.profile_avatarBox {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid var(--avatar-border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: var(--form-background-color);
+}
+
+.profile_upload {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.successMessage{
+    color: green;
+    font-size: 22px;
+}

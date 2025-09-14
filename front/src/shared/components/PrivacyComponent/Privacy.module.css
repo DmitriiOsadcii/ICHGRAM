@@ -1,0 +1,38 @@
+.privacy {
+  width: 268px;
+  margin: 26px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.privacy__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  text-align: center;
+  padding: 2px;
+  color: var(--grey-text-color);
+}
+
+.privacy__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--link-text-color);
+  padding: 2px;
+  border-radius: 4px;
+  transition: background-color .2s ease;
+}
+
+.privacy__link:hover {
+  background-color: var(--hover-background-color);
+}
+
+.privacy__link:focus-visible {
+  outline: 2px solid var(--focus-ring-color, #8cb8ff);
+  outline-offset: 2px;
+  text-decoration: none;
+}

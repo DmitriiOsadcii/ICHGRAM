@@ -1,0 +1,11 @@
+.header {
+    width: 245px;
+    border-right: 1px solid var(--border-color);
+    padding: 12px;
+}
+
+.image {
+    padding: 0 15px;
+    margin-top: 16px;
+    margin-bottom: 21px;
+}

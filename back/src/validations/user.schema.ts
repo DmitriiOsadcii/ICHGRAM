@@ -1,0 +1,11 @@
+import * as Yup from "yup"
+
+export const updateUserSchema = Yup.object({
+    fullName: Yup.string().trim(),
+    username: Yup.string().trim(),
+    biography: Yup.string(),
+    website: Yup.string(),
+    profilePhoto: Yup.string(),
+}).noUnknown(true, ({ unknown }) => `Unknown field: ${unknown}`);
+
+export type updateUserSchema = Yup.InferType<typeof updateUserSchema>

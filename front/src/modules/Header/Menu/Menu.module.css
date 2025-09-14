@@ -1,0 +1,125 @@
+.navList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    position: relative;
+    left: 35%;
+    text-decoration: none;
+    
+}
+
+.navItemLink {
+    border-radius: 8px;
+    width: 220px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    white-space: nowrap;
+    transition: color 0.2s;
+    
+}
+
+.navItemLink:hover {
+    background-color: var(--second-background-color);
+}
+
+.profileWrap {
+    margin-top: 770px;
+    
+}
+
+.linkActive {
+    font-weight: 700;
+    color: var(--main-text-color);
+}
+
+.avatarRing {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2px solid var(--avatar-border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatarImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: var(--form-background-color);
+}
+
+
+.navIcon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    display: inline-block;
+    
+}
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  text-emphasis-color: rgb(172, 6, 6);
+}
+.link{
+    text-decoration: none;
+    color: rgb(236, 164, 91);
+    font-weight: 800;
+    font-size: large;
+}
+.link:hover{
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+    text-emphasis-color: rgb(165, 33, 33);
+    color: rgb(46, 31, 31);
+}   
+
+.link:active{
+    font-size: x-large;
+}
+.avatarImage{
+  --ring-size: 110px;
+  width: var(--ring-size);
+  height: var(--ring-size);
+  padding: 4px;
+  border-radius: 50%;
+  background: conic-gradient(#b93aaa,#e95950,#e99250,#eecd4a,#e99657,#e95950,#b83170,#aa3ab9);
+  display: grid;
+  place-items: center;   /* центрируем grid-айтем */
+  /* Доп. страховка от “выползания” */
+  overflow: hidden;
+}
+
+.profile__avatar {
+  /* делаем элемент квадратным */
+  width: 92%;
+  height: 92%;
+  /* или так вместо двух строк: aspect-ratio: 1 / 1; height:auto; */
+
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center; /* центр кадрирования */
+  display: block;
+
+  /* на случай странностей выравнивания — закрепим центровку у самого айтема */
+  place-self: center;        /* эквивалент align-self/justify-self:center */
+}
+.avatarBorder{
+    position: relative;
+    right: 25px;
+    bottom: 10px;
+}

@@ -1,0 +1,190 @@
+/* === Avatar styles (добавлено) === */
+.avatarRing {
+  --ring-start: var(--accent-color, #7c3aed);
+  --ring-end: var(--accent2-color, #06b6d4);
+  position: relative;
+  border-radius: 9999px;
+  padding: 2px; /* толщина кольца */
+  background: conic-gradient(from 180deg, var(--ring-start), var(--ring-end));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+  transition: transform .15s ease;
+}
+
+.avatarRing:hover {
+  transform: translateY(-1px);
+}
+
+/* размеры аватарки-колечка */
+.avatarRing.sm { width: 34px; height: 34px; }
+.avatarRing.md { width: 40px; height: 40px; }
+.avatarRing.lg { width: 56px; height: 56px; }
+
+/* само изображение */
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+  background: var(--avatar-bg, #f3f4f6);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.65);
+  transition: transform .15s ease;
+}
+
+.avatarRing:hover .avatarImg {
+  transform: scale(1.02);
+}
+
+/* индикатор статуса (опционально добавляй элемент в JSX) */
+.avatarStatus {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: #22c55e;            /* online */
+  box-shadow: 0 0 0 2px #fff;      /* обводка */
+}
+
+/* === Твой существующий стиль === */
+
+.addCommentContainer {
+  border-top: 0.85px solid #dbdbdb;
+  width: 100%;
+}
+
+.conteiner {
+  width: 935px;
+  height: 45vh;
+  margin: 0 auto;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+}
+
+.imageContainer {
+  flex: 0 0 60%;
+  max-width: 577px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.postConteiner {
+  flex: 0 0 40%;
+  border-radius: 0 3px 3px 0;
+  max-width: 423px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.titleBox {
+  width: 100%;
+  border-bottom: 0.85px solid var(--second-border-color);
+  border-left: 0.85px solid var(--second-border-color);
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.usernameBox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.username {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--link-auth-text-color);
+}
+
+.btnLink {
+  cursor: pointer;
+  border: none;
+  background-color: var(--white-background-color);
+}
+
+.username:hover {
+  color: var(--hover-text-color);
+}
+
+.iconBtnBox {
+  cursor: pointer;
+  border: none;
+  background-color: var(--white-background-color);
+  width: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.postDescriptionContainer {
+  flex: 1;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow-y: auto;
+}
+
+/* post */
+
+.postDescriptionBox {
+  display: flex;
+  align-items: flex-start;
+}
+
+.postBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 12px;
+  padding-bottom: 12px;
+}
+
+.post p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 129%;
+  color: var(--link-auth-text-color);
+  margin: 0;
+}
+
+.usernameText {
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+/* post info */
+.postInfoBox {
+  border-top: 0.85px solid #dbdbdb;
+  width: 100%;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 0px 14px 14px;
+}
+
+.infoData {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 133%;
+  letter-spacing: 0.02em;
+  color: var(--grey-text-color);
+}

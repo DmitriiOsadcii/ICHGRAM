@@ -1,0 +1,15 @@
+.feedWrapper {
+  padding: 38px 10px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.feedGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 404px);
+  gap: 39px;
+}

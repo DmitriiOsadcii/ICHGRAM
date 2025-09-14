@@ -1,0 +1,43 @@
+.title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 125%;
+    color: var(--main-text-color);
+}
+
+.panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-y: auto;
+}
+
+.titleBox {
+    margin-top: 20px;
+    margin-left: 26px;
+}
+
+.title {
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    color: #e2a533;
+    margin-left: 150px;
+}
+
+.notificationsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.empty{
+    margin-top: 20px;
+    margin-left: 26px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    color: var(--grey-text-color);
+}

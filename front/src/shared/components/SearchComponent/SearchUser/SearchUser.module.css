@@ -1,0 +1,118 @@
+.search-item__username-btn,
+.search-item__username-link {
+  font-weight: 700;
+  font-size: 14px;
+  /* сбросы для кнопки */
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  cursor: pointer;
+
+  display: inline-block;
+  max-width: 100%;
+  text-decoration: none;
+  color: var(--main-text-color);
+
+  /* обрезка на одну строку */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Красивый градиентный текст + анимация при ховере */
+.prettyName {
+  --c1: #b93aaa;
+  --c2: #e95950;
+  --c3: #f09433;
+  --c4: #bc2a8d;
+
+  background: linear-gradient(90deg, var(--c1), var(--c2), var(--c3), var(--c4));
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  transition: background-position .3s ease;
+}
+
+.search-item__username-btn:hover,
+.search-item__username-link:hover {
+  text-decoration: none; /* убираем дефолтные подчёркивания */
+}
+
+.search-item__username-btn:hover.prettyName,
+.search-item__username-link:hover.prettyName,
+.search-item__username-btn:focus-visible.prettyName,
+.search-item__username-link:focus-visible.prettyName {
+  background-position: 100% 0;
+}
+
+/* Аккуратный focus-ring */
+.search-item__username-btn:focus-visible,
+.search-item__username-link:focus-visible {
+  outline: 2px solid var(--focus-ring-color, #8cb8ff);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Остальной твой CSS без изменений ↓ */
+.search-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 22px;
+  transition: background-color .2s ease;
+}
+
+.search-item:hover,
+.search-item:focus-within {
+  background-color: var(--hover-form-background-color);
+}
+
+.search-item__row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-item__avatar-ring {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  padding: 2px;
+  background: conic-gradient(#b93aaa, #e95950, #e99250, #eecd4a, #e99657, #e95950, #b83170, #aa3ab9);
+  display: grid;
+  place-items: center;
+}
+
+.search-item__avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 2px;
+  object-fit: cover;
+  background-color: var(--form-background-color);
+}
+
+.search-item__meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  gap: 6px;
+  min-width: 0;
+}
+
+.search-item__fullname {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--grey-text-color);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

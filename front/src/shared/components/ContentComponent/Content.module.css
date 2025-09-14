@@ -1,0 +1,136 @@
+.auth-card {
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;          /* было 1px */
+  width: 350px;
+  max-width: 100%;             /* лучше на узких экранах */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 19px;
+  gap: 8px;                    /* небольшая базовая сетка */
+  background: var(--panel-bg, #fff);
+}
+
+.auth-card__logo {
+  width: 190px;
+}
+.auth-card__logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.auth-card__icon {
+  margin-top: 6px;
+}
+
+.auth-card__message-wrap {
+  margin-bottom: 36px;
+}
+
+.auth-card__text-group {
+  width: 268px;
+}
+
+.auth-card__message {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  color: var(--grey-text-color);
+}
+
+.auth-card__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  color: var(--main-text-color);
+  margin: 14px 0;
+}
+
+.auth-card__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  text-align: center;
+  color: var(--grey-text-color);
+  margin-bottom: 16px;
+}
+.auth-card__description strong {
+  font-weight: 700;
+  color: var(--main-text-color);
+}
+
+.auth-card__link-row {
+  margin-top: 54px;
+}
+
+.auth-card__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  text-align: center;
+  color: var(--link-text-color);
+  padding: 2px 4px;            /* клик-зона побольше */
+  border-radius: 6px;
+  transition: background-color .2s ease, color .2s ease;
+}
+.auth-card__link:hover {
+  background-color: var(--hover-background-color);
+}
+.auth-card__link:focus-visible {
+  outline: 2px solid var(--focus-ring-color, #8cb8ff);
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+.auth-card__divider {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 11px;
+  margin-bottom: 16px;
+}
+.auth-card__divider-line {
+  width: 106px;
+  height: 1px;
+  background: var(--border-color);
+}
+.auth-card__divider-text {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: var(--grey-text-color);
+}
+
+.authPage {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;           /* центр экрана по X и Y */
+  background: var(--app-bg, #fafafa);
+}
+
+.authLayout {
+  width: min(100%, 980px);
+  display: grid;
+  grid-template-columns: 350px minmax(320px, 520px); /* слева форма, справа визуал */
+  align-items: center;
+  gap: 48px;
+  padding: 24px 16px;
+}
+.cardCol {
+  justify-self: center;
+}
+.visualCol {
+  justify-self: end;             /* прижать к правому краю, как в Instagram */
+}
+.visualImg {
+  width: 100%;
+  max-width: 460px;              /* похожий размер на макет */
+  height: auto;
+  display: block;
+}

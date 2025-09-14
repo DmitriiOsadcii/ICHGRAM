@@ -1,0 +1,23 @@
+.learnWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.learnTitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: var(--main-text-color);
+}
+
+.learnContent {
+  display: grid;
+  gap: 16px;
+}
+.banner{
+   width: 100%;
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 0;
+}

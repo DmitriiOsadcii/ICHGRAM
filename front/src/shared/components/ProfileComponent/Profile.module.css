@@ -1,0 +1,144 @@
+.profile {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(24px, 6vw, 94px);       
+}
+
+.profile__avatar-ring {
+  --ring-size: 160px;
+  width: var(--ring-size);
+  height: var(--ring-size);
+  padding: 4px;
+  border-radius: 50%;
+  background: conic-gradient(#b93aaa,#e95950,#e99250,#eecd4a,#e99657,#e95950,#b83170,#aa3ab9);
+  display: grid;
+  place-items: center;   /* центрируем grid-айтем */
+  /* Доп. страховка от “выползания” */
+  overflow: hidden;
+}
+
+.profile__avatar {
+  /* делаем элемент квадратным */
+  width: 92%;
+  height: 92%;
+  /* или так вместо двух строк: aspect-ratio: 1 / 1; height:auto; */
+
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center; /* центр кадрирования */
+  display: block;
+
+  /* на случай странностей выравнивания — закрепим центровку у самого айтема */
+  place-self: center;        /* эквивалент align-self/justify-self:center */
+}
+
+.profile__content {
+  width: min(100%, 480px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile__header {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;                 
+}
+
+.profile__username {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.26;
+  color: var(--main-text-color);
+}
+
+.profile__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile__stats {
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 6vw, 60px);
+  flex-wrap: wrap;
+}
+
+.profile__stat {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.profile__stat-value {
+  font-weight: 600;
+  color: var(--main-text-color);
+}
+
+.profile__stat-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.12;
+  color: var(--main-text-color);
+}
+
+.profile__bio {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--main-text-color);
+}
+
+.profile__fullname {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Ссылка в био */
+.profile__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 6px;
+  width: fit-content;
+  border-radius: 6px;
+  transition: background-color .2s ease;
+}
+
+.profile__link a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--link-text-color);
+}
+
+.profile__link:hover {
+  background-color: var(--hover-background-color);
+}
+
+.profile__link a:focus-visible {
+  outline: 2px solid var(--focus-ring-color, #8cb8ff);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .profile__content {
+    width: 100%;
+    align-items: center;
+  }
+  .profile__header {
+    justify-content: center;
+  }
+  .profile__stats {
+    justify-content: center;
+  }
+}

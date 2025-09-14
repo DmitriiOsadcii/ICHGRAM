@@ -1,0 +1,10 @@
+.textFields {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.btn {
+    margin-top: 16px;
+    margin-bottom: 11px;
+}

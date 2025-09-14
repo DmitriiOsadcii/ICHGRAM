@@ -1,0 +1,37 @@
+.postInfoBox {
+    /* border-top: 0.85px solid #dbdbdb; */
+    width: 100%;
+}
+
+.iconsBox {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    padding-left: 14px;
+}
+
+.infoLikesBox {
+    display: flex;
+    gap: 4px;
+}
+
+.infoLikesBox p {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 129%;
+    color: var(--main-text-color);
+}
+
+.likeBtn{
+    cursor: pointer;
+    border: none;
+    background-color: var(--white-background-color);
+
+    margin-left: -6px;
+}

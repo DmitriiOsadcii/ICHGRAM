@@ -1,0 +1,66 @@
+.modalContainer {
+  border-radius: 12px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.modalHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 22px;
+}
+
+.modalTitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.modalDescription {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--grey-text-color);
+}
+
+.modalActions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.modalAction {
+  width: 100%;
+  border-top: 1px solid var(--border-color);
+  padding: 19px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--main-text-color);
+
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.modalAction:hover {
+  background-color: var(--second-background-color);
+}
+
+.modalLast {
+  border-radius: 0 0 12px 12px;
+}
+
+.modalDanger {
+  color: var(--danger-text-color);
+}
